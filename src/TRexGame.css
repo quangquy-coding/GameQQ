@@ -1,0 +1,90 @@
+.trex-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.score {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #FFD700;
+}
+
+.game-container {
+  position: relative;
+  background: linear-gradient(to bottom, #87CEEB 0%, #87CEEB 70%, #DEB887 70%, #DEB887 100%);
+  border: 3px solid #fff;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.dino {
+  position: absolute;
+  font-size: 40px;
+  transition: bottom 0.3s ease-out;
+  z-index: 10;
+}
+
+.dino.jumping {
+  animation: jump 0.6s ease-out;
+}
+
+@keyframes jump {
+  0% { bottom: 0px; }
+  50% { bottom: 100px; }
+  100% { bottom: 0px; }
+}
+
+.obstacle {
+  position: absolute;
+  background-color: #654321;
+  border-radius: 2px;
+}
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: repeating-linear-gradient(
+    to right,
+    #333 0px,
+    #333 10px,
+    #666 10px,
+    #666 20px
+  );
+  animation: moveGround 1s linear infinite;
+}
+
+@keyframes moveGround {
+  0% { background-position: 0px 0px; }
+  100% { background-position: 20px 0px; }
+}
+
+.game-instructions, .game-over {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.start-btn, .restart-btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  background: #FF6B35;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.start-btn:hover, .restart-btn:hover {
+  background: #E55A2B;
+}
+
+.game-over h3 {
+  color: #FF5722;
+  margin: 10px 0;
+}

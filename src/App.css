@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: white;
+}
+
+.menu {
+  margin-top: 50px;
+}
+
+.game-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  font-size: 20px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.game-btn:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+.back-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #da190b;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
