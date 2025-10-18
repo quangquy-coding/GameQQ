@@ -54,8 +54,35 @@ function SnakeGame() {
       }
     };
 
+    const handleTouch = (e) => {
+      if (!gameStarted) return;
+      e.preventDefault();
+      
+      const touch = e.touches[0];
+      const rect = e.target.getBoundingClientRect();
+      const x = touch.clientX - rect.left;
+      const y = touch.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      
+      const deltaX = x - centerX;
+      const deltaY = y - centerY;
+      
+      if (Math.abs(deltaX) > Math.abs(deltaY)) {
+        if (deltaX > 0 && direction.x === 0) setDirection({ x: 1, y: 0 });
+        if (deltaX < 0 && direction.x === 0) setDirection({ x: -1, y: 0 });
+      } else {
+        if (deltaY > 0 && direction.y === 0) setDirection({ x: 0, y: 1 });
+        if (deltaY < 0 && direction.y === 0) setDirection({ x: 0, y: -1 });
+      }
+    };
+
     window.addEventListener('keydown', handleKeyPress);
-    return () => window.removeEventListener('keydown', handleKeyPress);
+    document.addEventListener('touchstart', handleTouch);
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+      document.removeEventListener('touchstart', handleTouch);
+    };
   }, [direction, gameStarted]);
 
   useEffect(() => {
@@ -106,7 +133,7 @@ function SnakeGame() {
       {!gameStarted && !gameOver && (
         <div className="game-controls">
           <button onClick={startGame} className="start-btn">Bắt Đầu</button>
-          <p>Dùng phím mũi tên để điều khiển</p>
+          <p>Phím mũi tên hoặc chạm màn hình</p>
         </div>
       )}
 

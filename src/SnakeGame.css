@@ -67,3 +67,19 @@
   color: #FF5722;
   margin: 10px 0;
 }
+
+@media (max-width: 768px) {
+  .game-board {
+    grid-template-columns: repeat(20, 15px);
+    grid-template-rows: repeat(20, 15px);
+  }
+  
+  .cell {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .snake-game {
+    padding: 5px;
+  }
+}

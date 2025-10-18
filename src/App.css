@@ -1,27 +1,35 @@
 .App {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
   color: white;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .menu {
-  margin-top: 50px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .game-btn {
-  display: block;
-  margin: 20px auto;
-  padding: 15px 30px;
-  font-size: 20px;
+  width: 280px;
+  max-width: 90vw;
+  padding: 15px 20px;
+  font-size: 18px;
   background: #4CAF50;
   color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s;
+  touch-action: manipulation;
 }
 
 .game-btn:hover {
@@ -46,4 +54,26 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 5px;
+  }
+  
+  .App h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .game-btn {
+    width: 95vw;
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+  
+  .menu {
+    margin-top: 10px;
+    gap: 10px;
+  }
 }

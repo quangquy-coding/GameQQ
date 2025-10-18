@@ -1,0 +1,48 @@
+.tetris-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.tetris-board {
+  display: grid;
+  grid-template-columns: repeat(10, 25px);
+  grid-template-rows: repeat(20, 25px);
+  gap: 1px;
+  background-color: #333;
+  border: 3px solid #fff;
+  margin: 10px 0;
+  touch-action: none;
+}
+
+.tetris-cell {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #555;
+}
+
+.color-0 { background-color: #000; }
+.color-1 { background-color: #FF0000; }
+.color-2 { background-color: #00FF00; }
+.color-3 { background-color: #0000FF; }
+.color-4 { background-color: #FFFF00; }
+.color-5 { background-color: #FF00FF; }
+.color-6 { background-color: #00FFFF; }
+.color-7 { background-color: #FFA500; }
+
+.game-controls, .game-over {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.start-btn, .restart-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #9C27B0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+}

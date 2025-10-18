@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import SnakeGame from './SnakeGame';
 import TRexGame from './TRexGame';
+import FlappyBird from './FlappyBird';
+import TetrisGame from './TetrisGame';
+import PongGame from './PongGame';
 import './App.css';
 
 function App() {
@@ -17,6 +20,15 @@ function App() {
           </button>
           <button onClick={() => setCurrentGame('trex')} className="game-btn">
             🦕 Game Khủng Long
+          </button>
+          <button onClick={() => setCurrentGame('flappy')} className="game-btn">
+            🐦 Flappy Bird
+          </button>
+          <button onClick={() => setCurrentGame('tetris')} className="game-btn">
+            🧩 Tetris
+          </button>
+          <button onClick={() => setCurrentGame('pong')} className="game-btn">
+            🏓 Pong
           </button>
         </div>
       )}
@@ -36,6 +48,33 @@ function App() {
             ← Về Menu
           </button>
           <TRexGame />
+        </div>
+      )}
+
+      {currentGame === 'flappy' && (
+        <div>
+          <button onClick={() => setCurrentGame('menu')} className="back-btn">
+            ← Về Menu
+          </button>
+          <FlappyBird />
+        </div>
+      )}
+
+      {currentGame === 'tetris' && (
+        <div>
+          <button onClick={() => setCurrentGame('menu')} className="back-btn">
+            ← Về Menu
+          </button>
+          <TetrisGame />
+        </div>
+      )}
+
+      {currentGame === 'pong' && (
+        <div>
+          <button onClick={() => setCurrentGame('menu')} className="back-btn">
+            ← Về Menu
+          </button>
+          <PongGame />
         </div>
       )}
     </div>
