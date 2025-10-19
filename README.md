@@ -9,15 +9,18 @@ Bộ sưu tập 5 game kinh điển được phát triển bằng React, tối �
 ## 🐍 Game Rắn (Snake Game)
 
 ### Mô tả
+
 Game rắn kinh điển với gameplay đơn giản nhưng gây nghiện. Điều khiển con rắn ăn thức ăn để tăng kích thước và điểm số, tránh va chạm vào tường hoặc thân mình.
 
 ### Cách chơi
+
 - **Desktop**: Sử dụng phím mũi tên (↑↓←→) để điều khiển
 - **Mobile**: Chạm vào màn hình theo hướng muốn di chuyển
 - Ăn thức ăn màu đỏ để tăng điểm và kích thước
 - Tránh va chạm vào tường hoặc thân rắn
 
 ### Tính năng
+
 - Bảng điểm theo thời gian thực
 - Tốc độ game ổn định
 - Giao diện đẹp mắt với hiệu ứng màu sắc
@@ -28,15 +31,18 @@ Game rắn kinh điển với gameplay đơn giản nhưng gây nghiện. Điề
 ## 🦕 Game Khủng Long (T-Rex Game)
 
 ### Mô tả
+
 Phiên bản tái hiện của game khủng long nổi tiếng trên Chrome khi mất mạng. Điều khiển khủng long nhảy qua các chướng ngại vật với tốc độ ngày càng tăng.
 
 ### Cách chơi
+
 - **Desktop**: Nhấn phím SPACE hoặc mũi tên lên để nhảy
 - **Mobile**: Chạm vào màn hình để nhảy
 - Tránh các chướng ngại vật màu nâu
 - Tốc độ game tăng dần theo thời gian
 
 ### Tính năng
+
 - Animation nhảy mượt mà
 - Chướng ngại vật ngẫu nhiên với độ cao khác nhau
 - Hệ thống tăng tốc độ tự động
@@ -47,15 +53,18 @@ Phiên bản tái hiện của game khủng long nổi tiếng trên Chrome khi 
 ## 🐦 Flappy Bird
 
 ### Mô tả
+
 Game bay kinh điển với gameplay thử thách khả năng phản xử. Điều khiển chú chim bay qua các cặp ống mà không va chạm.
 
 ### Cách chơi
+
 - **Desktop**: Click chuột hoặc nhấn phím bất kỳ để bay lên
 - **Mobile**: Chạm vào màn hình để bay lên
 - Bay qua các khoảng trống giữa các ống xanh
 - Mỗi cặp ống vượt qua được +1 điểm
 
 ### Tính năng
+
 - Vật lý bay thực tế với trọng lực
 - Ống chướng ngại vật được tạo ngẫu nhiên
 - Hiệu ứng nền gradient đẹp mắt
@@ -66,10 +75,12 @@ Game bay kinh điển với gameplay thử thách khả năng phản xử. Đi�
 ## 🧩 Tetris
 
 ### Mô tả
+
 Game xếp hình kinh điển với 7 loại khối Tetromino khác nhau. Xếp các khối rơi xuống thành hàng ngang đầy để xóa và ghi điểm.
 
 ### Cách chơi
-- **Desktop**: 
+
+- **Desktop**:
   - Phím mũi tên trái/phải: Di chuyển khối
   - Phím mũi tên lên: Xoay khối
   - Phím mũi tên xuống: Thả nhanh
@@ -79,12 +90,14 @@ Game xếp hình kinh điển với 7 loại khối Tetromino khác nhau. Xếp 
   - Chạm phần dưới: Thả nhanh khối
 
 ### Tính năng
+
 - 7 loại khối Tetromino với màu sắc khác nhau
 - Hệ thống xóa hàng tự động
 - Tốc độ rơi tăng dần theo level
 - Bảng điểm chi tiết
 
 ### Các loại khối
+
 - **I-Block**: Thanh thẳng 4 ô (màu đỏ)
 - **O-Block**: Hình vuông 2x2 (màu xanh lá)
 - **T-Block**: Hình chữ T (màu xanh dương)
@@ -98,15 +111,18 @@ Game xếp hình kinh điển với 7 loại khối Tetromino khác nhau. Xếp 
 ## 🏓 Pong
 
 ### Mô tả
+
 Game bóng bàn 2D kinh điển, đối đầu với AI thông minh. Điều khiển paddle để đánh bóng và ghi điểm khi đối thủ không thể trả lại.
 
 ### Cách chơi
+
 - **Desktop**: Di chuyển chuột lên xuống để điều khiển paddle
 - **Mobile**: Chạm và kéo ngón tay lên xuống màn hình
 - Đánh bóng về phía đối thủ
 - Ghi điểm khi AI không thể trả lại bóng
 
 ### Tính năng
+
 - AI thông minh với độ khó vừa phải
 - Vật lý bóng thực tế với góc phản xạ
 - Bảng điểm theo dõi Player vs AI
@@ -166,4 +182,5 @@ npm start
 
 **🎮 Chơi ngay:** [https://gamequangquy.netlify.app/](https://gamequangquy.netlify.app/)
 
-*Phát triển bởi React - Tối ưu cho mọi thiết bị* 🚀
+_Phát triển bởi React - Tối ưu cho mọi thiết bị_ 🚀
+,,,
